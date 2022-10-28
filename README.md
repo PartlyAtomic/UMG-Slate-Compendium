@@ -166,14 +166,14 @@ already explained.
 [Epic's Official Documentation on Performance and Optimization Guidelines for Slate & UMG](https://docs.unrealengine.com/latest/INT/optimization-guidelines-for-umg-in-unreal-engine/)
 
 **UMG** & **Slate** are extremely performant frameworks for both the rendering (GPU) and computation (CPU) aspects.
-But both aspects should be considered when building out you're UI to have the best experience for the User.
+But both aspects should be considered when building out your UI to have the best experience for the User.
 
 > This is not a "how to improve performance" guide,
 > these are considerations to be aware of when building your application with UMG/Slate and possible avenues to help improve performance.
 
 UI Complexity is usually in relation to the number of active and visible widgets
 (so offscreen widgets don’t tick and should not run functionality if not on screen).
-A common technical design with UI is to be reactive to gameplay code(it is also suggested if you're game isn't UI dependent) but not
+A common technical design with UI is to be reactive to gameplay code(it is also suggested if your game isn't UI dependent) but not
 to drive the gameplay code so it is performant and reusable, normally its fine for the UI to be the entry point
 for executing the gameplay code but then it should listen to how the gameplay code responded and to react to it.
 
